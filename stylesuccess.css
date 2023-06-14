@@ -1,0 +1,203 @@
+/* Import the Open Sans font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+            padding: 0;
+            margin: 0;
+        }
+/*  background color, width, and height for the body */
+        body {
+            background-color:#000000;
+            width: 100%;
+            height: 100%;
+        }
+        /* styles for the messenger container */
+        .messenger {
+            background-color: #ffffff;
+            width: 160px;
+            height: 160px;
+            border-radius: 28px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+        }
+        .messenger:hover {
+            transform: scale(1.1);
+        }
+/* styles for the messenger circle */
+        .mesgcircle {
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color:#100547;
+            float: left;
+            position: relative;
+        }
+/* styles for the arrow on the messenger circle */
+        .mesgcircle:after {
+            left: -3px;
+            content: '';
+            border-top: 23px solid #100547;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            display: block;
+            width: 0px;
+            height: 0;
+            transform: rotate(40deg);
+            position: absolute;
+            top: 82px;
+            border-radius: 5px;
+        }
+/*  styles for the loading animation */
+        .mesgload {
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            margin: 40px 0;
+            float: left;
+        }
+
+        .mesgload span {
+            width: 11px;
+            height: 11px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 5px 3px 0;
+            animation-name: dotone;
+            animation-duration: 1.8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .mesgload span:nth-child(2) {
+            animation-delay: .30s;
+        }
+
+        .mesgload span:nth-child(3) {
+            animation-delay: .61s;
+        }
+/*  keyframes for the loading animation */
+        @keyframes dotone {
+            25% {
+                transform: translateY(-25px)
+            }
+
+            65% {
+                transform: translateY(8px)
+            }
+
+            80% {
+                transform: translateY(0px)
+            }
+        }
+/*  styles for the scrolling text container */
+        .msgscrol {
+            background-color: #d92680;
+            width: 250px;
+            height: 45px;
+            border-radius: 25px;
+            overflow: hidden;
+            position: absolute;
+            top: -55px;
+            right: -50px;
+        }
+/*  styles for the scrolling text */
+        .msgscrol span {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 28px;
+            color: #ffffff;
+            display: block;
+            white-space: nowrap;
+            margin: 1px 0;
+            animation: 4s txtscrl linear infinite;
+        }
+/* keyframes for the scrolling text */
+        @keyframes txtscrl {
+            0% {
+                transform: translateX(130px)
+            }
+
+            100% {
+                transform: translateX(-290px)
+            }
+        }
+/*  styles for the "inspired " section */
+        .inspired {
+            width: 100%;
+            text-align: center;
+        }
+    
+    .inspired:hover {
+        transform: scale(1.5);
+    }
+        .inspired p {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #d92680;
+        }
+
+        .inspired a {
+            color:  #d92680;
+            font-size: 20px;
+            text-decoration: none;
+            border-bottom: 1px solid #555555;
+            padding-bottom: 3px;
+            font-weight: bold;
+        }
+
+        .inspired a:hover {
+            border-bottom: 1px solid transparent;
+        }
+        .icon {
+            /* styles to position the icon */
+            display: inline-block;
+            margin-right: 5px;
+            
+          }
+          
+           /* styles to change the color or size of the icon */ 
+          .icon:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 1.2em;
+            color: #d92680; 
+          }
+          .container header h1 {
+            margin-top: 75px;
+            font-size: 50px;
+             color: #d92680;
+           text-align: center;
+           text-shadow: 0 0 10px#d92680, 0 0 20px#d92680, 0 0 30px#d92680, 0 0 40px#d92680, 0 0 50px#d92680, 0 0 60px#d92680, 0 0 70px #d92680;
+          }
+                    
+          .container {
+
+            border: 5px solid #d92680;
+            border-radius: 28px;
+            margin: 200px auto;
+            max-width: 500px;
+            padding: 50px;
+            position: relative;
+            
+          }
+         
+          /* Style the button */
+          .inspired button {
+            background-color: #d92680;
+            border: none;
+            border-radius: 28px;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+          }
+        
+          /* Style the button on hover */
+          .inspired button:hover {
+            background-color:  #100547;
+          }
+    

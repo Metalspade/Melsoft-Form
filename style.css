@@ -1,0 +1,72 @@
+/* Set margin for body to push content down */
+body {
+    margin-top: 100px; 
+  }
+  
+  /* Container for the form */
+  .container {
+    max-width: 500px; /* Set maximum width for container */
+    margin-top:auto; /* Center the container vertically */
+    padding: 20px; /* Add padding inside container */
+    border: 1px solid #ccc; /* Add border around container */
+    border-radius: 5px; /* Round the corners of the container */
+    background: linear-gradient(to right, #f3f5f5,  #100547); /* Add gradient background to container */
+  }
+  
+  /* Form styling */
+  #registration-form {
+    margin-top: 20px; /* Add top margin to form */
+  }
+  
+  label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Add bottom margin to label */
+    font-weight: bold; /* Make label text bold */
+  }
+  
+  .form-control {
+    width: 100%; /* Set width of form inputs to 100% */
+    height: 40px; /* Set height of form inputs */
+    padding: 5px 10px; /* Add padding to form inputs */
+    font-size: 16px; /* Set font size of form inputs */
+    border-radius: 5px; /* Round the corners of the form inputs */
+    border: 1px solid #d92680; /* Add border to form inputs */
+  }
+  
+  .form-text {
+    margin-top: 5px; /* Add top margin to form text */
+    font-size: 14px; /* Set font size of form text */
+  }
+  
+  /* Styling for error messages */
+  .text-danger {
+    color: red; /* Set text color to red */
+    font-size: 18px; /* Set font size of error message */
+  }
+  
+  /* Button styling */
+  .btn {
+    background-color:   #100547; /* Set background color of button */
+    color: #fff; /* Set text color of button */
+    border: none; /* Remove border from button */
+    border-radius: 5px; /* Round the corners of the button */
+    padding: 10px 20px; /* Add padding to button */
+    font-size: 16px; /* Set font size of button */
+    cursor: pointer; /* Change cursor to pointer when hovering over button */
+  }
+  
+  .btn:hover {
+    background-color: #d92680; /* Change background color of button on hover */
+  }
+  
+  /* Styling for image container */
+  .image-container {
+    float: left; /* Float image container to the left */
+    margin-right: 20px; /* Add right margin to image container */
+  }
+  
+  /* Styling for images inside container */
+  .image-container img {
+    max-width: 100%; /* Set maximum width of images to 100% */
+  }
+  
