@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let confirmPassword = document.querySelector('#confirm-password').value;
     let passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[\w.!@#$%^&*]{8,}$/;
 
+
     if (password === '') {
       document.querySelector('#password-error').textContent = 'Please enter a password';
       isValid = false;
